@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон сайта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<!-- Блок 1: Слайдер -->
+<div class="slider">
+    <div class="slide active">
+        <img src="src/image/slide1.jpg" class="desktop-img">
+        <img src="src/image/slide1-mobile.png" class="mobile-img">
+        <div class="slide-content">
+            <p class="highlighted-text-1">Новички</p>
+            <h1 class="main-heading">Сделайте шаг <br>к новой профессии</h1>
+            <p class="subheading">Курсы, которые помогут освоить востребованную профессию
+                с нуля или изучить новую специализацию</p>
+            <button class="cta-button">Подробнее</button>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="src/image/slide2.jpg" class="desktop-img">
+        <img src="src/image/slide2-mobile.png" class="mobile-img">
+        <div class="slide-content">
+            <p class="highlighted-text-2">Специалисты</p>
+            <h1 class="main-heading">Сделайте шаг <br>к росту карьеры</h1>
+            <p class="subheading">Курсы для специалистов с опытом, чтобы развиваться
+                в профессии и открывать новые возможности в карьере</p>
+            <button class="cta-button">Подробнее</button>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="src/image/slide3.jpg" class="desktop-img">
+        <img src="src/image/slide3-mobile.png" class="mobile-img">
+        <div class="slide-content">
+            <p class="highlighted-text-3">Руководители</p>
+            <h1 class="main-heading">Сделайте шаг <br>к новым решениям</h1>
+            <p class="subheading">Курсы для руководителей, чтобы развивать управленческие
+                навыки и растить бизнес</p>
+            <button class="cta-button">Подробнее</button>
+        </div>
+    </div>
+    <div class="arrow left-arrow"  id="prevSlide"></div>
+    <div class="arrow right-arrow" id="nextSlide"></div>
+    <div class="pagination">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+<!-- Блок 2: Преимущество -->
+<div class="benefits">
+    <div class="column">
+        <img src="src/logo/icon1.svg" alt="Иконка 1" class="icon-1">
+        <div class="benefit-content-1">
+            <h2 class="benefit-title">Получите</h2>
+            <h2 class="benefit-title-highlight">профессию</h2>
+            <p class="benefit-text">Базовые курсы для изучения новой сферы
+                или профессии — с практикой и помощью в трудоустройстве</p>
+        </div>
+    </div>
+    <div class="vertical-line-1"></div>
+    <div class="horizontal-line-1"></div>
+    <div class="column">
+        <img src="src/logo/icon2.svg" alt="Иконка 2" class="icon-2">
+        <div class="benefit-content-2">
+            <h2 class="benefit-title">Растите</h2>
+            <h2 class="benefit-title-highlight-2">в профессии</h2>
+            <p class="benefit-text-2">Курсы продвинутого уровня для тех,
+                кто хочет усилить позиции в текущей профессии,
+                вырастить доходы, изучить новые инструменты</p>
+        </div>
+    </div>
+    <div class="vertical-line-2"></div>
+    <div class="horizontal-line-2"></div>
+    <div class="column">
+        <img src="src/logo/icon3.svg" alt="Иконка 3" class="icon-3">
+        <div class="benefit-content-3">
+            <h2 class="benefit-title">Управляйте</h2>
+            <h2 class="benefit-title-highlight-3">эффективно</h2>
+            <p class="benefit-text-3">Курсы для руководителей, чтобы
+                научиться эффективно решать сложные задачи в
+                управлении командой и бизнесом</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Блок 3: Обратная связь -->
+<div class="contact-form">
+    <h1 class="form-heading">Сделайте шаг <br>к новой профессии</h1>
+    <p class="form-subheading">Расскажите нам о своих целях и мы поможем
+        <br>выбрать подходящую программу.</p>
+    <form>
+        <input type="text" id="name" name="name" placeholder="Ваше имя">
+        <input type="tel" id="phone" name="phone" placeholder="+7(000) 000-00-00">
+        <button type="submit">Оставить заявку</button>
+    </form>
+    <p class="privacy-policy">Отправляя заявку, я соглашаюсь на обработку
+        <u>персональных данных</u></p>
+</div>
+
+<div class="footer">
+    <img src="src/logo/logo.png" alt="Логотип" class="footer-logo">
+</div>
+
+<script src="src/index.js"></script>
+</body>
+</html>

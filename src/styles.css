@@ -1,0 +1,579 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Блок 1: Слайдер */
+.desktop-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 960px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #FFF;
+}
+
+.highlighted-text-1, .highlighted-text-2, .highlighted-text-3 {
+    position: absolute;
+    left: 260px;
+    top: 295px;
+    font-size: 20px;
+    color: #0ED984;
+    text-decoration: underline;
+}
+.highlighted-text-2 {
+    color: #3577F6;
+}
+.highlighted-text-3 {
+    color: #D72DF3;
+}
+
+.main-heading {
+    position: absolute;
+    left: 260px;
+    top: 290px;
+    font-size: 96px;
+    color: #FFF;
+}
+
+.subheading {
+    position: absolute;
+    left: 260px;
+    top: 609px;
+    font-size: 20px;
+    color: #FFF;
+    width: 600px;
+    height: 50px;
+}
+
+.cta-button {
+    position: absolute;
+    left: 1450px;
+    top: 604px;
+    width: 210px;
+    height: 60px;
+    border: 2px dashed #FFF;
+    background: transparent;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 70px;
+    top: 455px;
+    background-image: url('logo/left-arrow.png'); /* Замените на ваше изображение */
+}
+
+.right-arrow {
+    right: 70px;
+    top: 455px;
+    background-image: url('logo/right-arrow.png'); /* Замените на ваше изображение */
+}
+
+.pagination {
+    position: absolute;
+    left: 260px;
+    top: 797px;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    background-image: url('logo/inactive-dot.svg'); /* Замените на ваше изображение неактивной точки */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-image: url('logo/active-dot1.svg'); /* Замените на ваше изображение активной точки */
+}
+
+/* Блок 2: Преимущество */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    height: 670px;
+    background-color: #FFF; /* Изменен цвет блока */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    box-sizing: border-box;
+}
+
+.icon-1 {
+    position: absolute;
+    left: 160px;
+    top: 1150px;
+    width: 75px;
+    height: 75px;
+}
+
+.icon-2 {
+    position: absolute;
+    left: 710px;
+    top: 1150px;
+    width: 75px;
+    height: 75px;
+}
+
+.icon-3 {
+    position: absolute;
+    left: 1260px;
+    top: 1150px;
+    width: 75px;
+    height: 75px;
+}
+
+.benefit-content-1 {
+    position: absolute;
+    left: 160px;
+    top: 1255px;
+    width: 30%;
+}
+
+.benefit-content-2 {
+    position: absolute;
+    left: 710px;
+    top: 1255px;
+    width: 30%;
+}
+
+.benefit-content-3 {
+    position: absolute;
+    left: 1260px;
+    top: 1255px;
+    width: 30%;
+}
+
+.benefit-title {
+    font-size: 36px;
+    color: #1D1A1A;
+    margin: 0;
+}
+
+.benefit-title-highlight {
+    font-size: 36px;
+    color: #0ED984;
+    margin: 0;
+}
+
+.benefit-title-highlight-2 {
+    font-size: 36px;
+    color: #3577F6;
+    margin: 0;
+}
+
+.benefit-title-highlight-3 {
+    font-size: 36px;
+    color: #D72DF3;
+    margin: 0;
+}
+
+.benefit-text, .benefit-text-2, .benefit-text-3 {
+    font-size: 20px;
+    color: #615D5D;
+    margin-top: 20px;
+    width: 500px;
+    height: 78px;
+}
+
+
+/* Для десктопной версии */
+.vertical-line-1 {
+    display: block;
+    position: absolute;
+    left: 660px;
+    top: 1080px;
+    width: 0px;
+    height: 425px;
+    border-left: 1px solid #F3F3F3;
+}
+
+.vertical-line-2 {
+    display: block;
+    position: absolute;
+    left: 1210px;
+    top: 1080px;
+    width: 0px;
+    height: 425px;
+    border-left: 1px solid #F3F3F3;
+}
+
+
+.vertical-line-1 {
+    position: absolute;
+    left: 660px;
+    top: 1080px;
+    width: 0px;
+    height: 425px;
+    border-left: 1px solid #F3F3F3;
+}
+
+.vertical-line-2 {
+    position: absolute;
+    left: 1210px;
+    top: 1080px;
+    width: 0px;
+    height: 425px;
+    border-left: 1px solid #F3F3F3;
+}
+
+/* Блок 3: Обратная связь */
+.contact-form {
+    width: 100%;
+    max-width: 1920px;
+    height: 528px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 40px 160px;
+}
+
+.form-heading {
+    font-size: 66px;
+    color: #1D1A1A;
+}
+
+.form-subheading {
+    font-size: 20px;
+    color: #615D5D;
+    margin-top: 20px;
+}
+
+.contact-form form {
+    position: absolute;
+    top: 1800px;
+    left: 940px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin: 5px;
+    width: 275px;
+    height: 45px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+#name::placeholder {
+    color: #C5C5C5;
+}
+
+#phone::placeholder {
+    color: #C5C5C5;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    margin-left: 20px;
+    width: 220px;
+    height: 65px;
+    background-color: #138F5B;
+    color: #FFF;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0C7343;
+}
+
+.privacy-policy {
+    position: absolute;
+    top: 1900px;
+    left: 945px;
+    font-size: 16px;
+    color: #A6A6A6;
+}
+
+/* Блок 4: Подвал */
+.footer {
+    width: 100%;
+    max-width: 1920px;
+    height: 65px;
+    background-color: #1D1A1A; /* Цвет блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 160px;
+    top: 2181px;
+}
+
+
+
+@media (max-width: 375px) {
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Блок 1: Слайдер */
+    .slider {
+        height: 667px;
+    }
+
+    .slide-content {
+        padding: 50px;
+    }
+
+    .highlighted-text-1, .highlighted-text-2, .highlighted-text-3 {
+        left: 16px;
+        top: 250px;
+        font-size: 20px;
+    }
+
+    .main-heading {
+        left: 16px;
+        top: 302px;
+        font-size: 36px;
+    }
+
+    .subheading {
+        left: 16px;
+        top: 397px;
+        font-size: 16px;
+        width: 344px;
+        height: 100px;
+        line-height: 25px;
+    }
+
+    .cta-button {
+        left: 16px;
+        top: 502px;
+    }
+
+    .pagination {
+        left: 16px;
+        top: 602px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /* Блок 2: Преимущество */
+    .benefits {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 17px;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .icon-1, .icon-2, .icon-3 {
+        position: static;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .benefit-content-1, .benefit-content-2, .benefit-content-3 {
+        position: static;
+        width: 100%;
+    }
+
+    .benefit-title, .benefit-title-highlight, .benefit-title-highlight-2, .benefit-title-highlight-3 {
+        font-size: 26px;
+    }
+
+    .benefit-text, .benefit-text-2, .benefit-text-3 {
+        font-size: 18px;
+        width: 343px;
+        height: 92px;
+    }
+
+    .vertical-line-1, .vertical-line-2 {
+        display: none;
+    }
+
+    .horizontal-line-1, .horizontal-line-2 {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #F3F3F3;
+        margin: 20px 0;
+    }
+    /* Блок 3 */
+    .contact-form {
+        width: 100%;
+        max-width: 375px;
+        height: 665px;
+        background-color: #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .form-heading {
+        position: absolute;
+        left: 15px;
+        top: 1800px;
+        font-size: 36px;
+        width: 335px;
+        height: 80px;
+        color: #1D1A1A;
+        font-weight: normal;
+    }
+
+    .form-subheading {
+        position: absolute;
+        left: 15px;
+        top: 1900px;
+        font-size: 20px;
+        width: 344px;
+        height: 75px;
+        color: #615D5D;
+        font-weight: 300;
+    }
+
+    .contact-form form {
+        position: absolute;
+        top: 2020px;
+        left: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-form input {
+        width: 310px;
+        height: 45px;
+        background-color: #FFF;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding: 10px;
+        color: #1D1A1A;
+    }
+
+    #name::placeholder {
+        color: #C5C5C5;
+    }
+
+    .contact-form button {
+        width: 333px;
+        height: 65px;
+        background-color: #138F5B;
+        color: #FFF;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transform: translateX(-15px);
+    }
+
+    .contact-form button:hover {
+        background-color: #0C7343;
+    }
+
+    .privacy-policy {
+        position: absolute;
+        left: 16px;
+        top: 2300px;
+        font-size: 16px;
+        width: 344px;
+        height: 42px;
+        color: #A6A6A6;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
+        max-width: 375px;
+        height: 65px;
+        background-color: #1D1A1A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo {
+        width: 194px;
+        height: 30px;
+        margin: 0 auto;
+        left: 90px;
+        top: 2435px
+    }
+}
